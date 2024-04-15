@@ -6,9 +6,9 @@ This repository contains description files and meshes for *Universal Robots* man
 
 ROS2 Distro | Branch | Build status | Released packages
 :---------: | :----: | :----------: | :---------------:
-**Humble** | [`humble`](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/tree/humble) | [![Build Status](https://build.ros2.org/job/Hbin_uJ64__ur_description__ubuntu_jammy_amd64__binary/badge/icon)](https://build.ros2.org/job/Hbin_uJ64__ur_description__ubuntu_jammy_amd64__binary/) | [ur_description](https://index.ros.org/p/ur_description/#humble)
-**Iron** | [`iron`](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/tree/iron) | [![Build Status](https://build.ros2.org/job/Ibin_uJ64__ur_description__ubuntu_jammy_amd64__binary/badge/icon)](https://build.ros2.org/job/Ibin_uJ64__ur_description__ubuntu_jammy_amd64__binary/) | [ur_description](https://index.ros.org/p/ur_description/#iron)
-**Rolling** | [`rolling`](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/tree/rolling) | [![Build Status](https://build.ros2.org/job/Rbin_uJ64__ur_description__ubuntu_jammy_amd64__binary/badge/icon)](https://build.ros2.org/job/Rbin_uJ64__ur_description__ubuntu_jammy_amd64__binary/)| [ur_description](https://index.ros.org/p/ur_description/#rolling)
+**Humble** | [`humble`](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/tree/humble) | [![Build Status](https://build.ros2.org/job/Hbin_uJ64__moveit_resources_ur_description__ubuntu_jammy_amd64__binary/badge/icon)](https://build.ros2.org/job/Hbin_uJ64__moveit_resources_ur_description__ubuntu_jammy_amd64__binary/) | [moveit_resources_ur_description](https://index.ros.org/p/moveit_resources_ur_description/#humble)
+**Iron** | [`iron`](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/tree/iron) | [![Build Status](https://build.ros2.org/job/Ibin_uJ64__moveit_resources_ur_description__ubuntu_jammy_amd64__binary/badge/icon)](https://build.ros2.org/job/Ibin_uJ64__moveit_resources_ur_description__ubuntu_jammy_amd64__binary/) | [moveit_resources_ur_description](https://index.ros.org/p/moveit_resources_ur_description/#iron)
+**Rolling** | [`rolling`](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/tree/rolling) | [![Build Status](https://build.ros2.org/job/Rbin_uJ64__moveit_resources_ur_description__ubuntu_jammy_amd64__binary/badge/icon)](https://build.ros2.org/job/Rbin_uJ64__moveit_resources_ur_description__ubuntu_jammy_amd64__binary/)| [moveit_resources_ur_description](https://index.ros.org/p/moveit_resources_ur_description/#rolling)
 
 A more [detailed build status](ci_status.md) shows the state of all CI workflows inside this repo.
 Please note that the detailed view is intended for developers, while the one here should give end
@@ -20,7 +20,7 @@ repository](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/tree
 not clone this repository into a Foxy workspace.
 
 ## License
-The [UR20 meshes](ur_description/meshes/ur20) and [UR30 meshes](ur_description/meshes/ur30) constitutes “Graphical Documentation” the use of which is subject to and governed by our “[Terms and Conditions for use of Graphical Documentation](https://www.universal-robots.com/legal/terms-and-conditions/terms_and_conditions_for_use_of_graphical_documentation.txt)”.
+The [UR20 meshes](moveit_resources_ur_description/meshes/ur20) and [UR30 meshes](moveit_resources_ur_description/meshes/ur30) constitutes “Graphical Documentation” the use of which is subject to and governed by our “[Terms and Conditions for use of Graphical Documentation](https://www.universal-robots.com/legal/terms-and-conditions/terms_and_conditions_for_use_of_graphical_documentation.txt)”.
 
 Universal Robots' [Terms and Conditions for use of Graphical Documentation](https://www.universal-robots.com/legal/terms-and-conditions/terms_and_conditions_for_use_of_graphical_documentation.txt) do not fully comply with [OSI's definition of Open Source](https://opensource.org/osd/), but they do allow you to use, modify and share “Graphical Documentation”, including [UR20](meshes/ur20) and [UR30](meshes/ur30) meshes, subject to certain restrictions.\
 If you have any questions regarding this license or if this license doesn't fit your use-case, please contact [legal@universal-robots.com](mailto:legal@universal-robots.com).
@@ -37,7 +37,7 @@ The most relevant files are:
 
 To visualize the robot install this repository to you workspace and execute the following:
 ```
-ros2 launch ur_description view_ur.launch.py ur_type:=ur5e
+ros2 launch moveit_resources_ur_description view_ur.launch.py ur_type:=ur5e
 ```
 
 To test other descriptions change the `ur_type` argument.
